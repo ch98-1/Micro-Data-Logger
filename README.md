@@ -1,2 +1,2 @@
 # Micro Data Logger
-Small microSD data logger based on ATxmega32D4
+Small microSD data logger based on ATmega444PA
