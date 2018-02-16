@@ -81,17 +81,6 @@ F 3 "http://www.ti.com/lit/ds/symlink/ads1232.pdf" H 2550 6150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L regul:MCP1700-3302E_SOT23 U?
-U 1 1 5A84FBCC
-P 6500 900
-F 0 "U?" H 6500 1142 50  0000 C CNN
-F 1 "MCP1700-3302E_SOT23" H 6500 1051 50  0000 C CNN
-F 2 "TO_SOT_Packages_SMD:SOT-23" H 6500 1125 50  0001 C CNN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20001826C.pdf" H 6500 900 50  0001 C CNN
-	1    6500 900 
-	1    0    0    -1  
-$EndComp
-$Comp
 L Connector:Conn_01x02 J?
 U 1 1 5A84FF75
 P 4200 900
@@ -157,9 +146,6 @@ Wire Wire Line
 Wire Wire Line
 	6900 1200 7400 1200
 Connection ~ 6900 1200
-Wire Wire Line
-	6500 1200 6900 1200
-Connection ~ 6500 1200
 Connection ~ 5950 900 
 Connection ~ 5950 1200
 Wire Wire Line
@@ -415,8 +401,6 @@ F 3 "" H 4800 5700 50  0001 C CNN
 	1    4800 5700
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5950 1200 6500 1200
 $Comp
 L atmel:ATMEGA644PA-MU U?
 U 1 1 5A8620E1
@@ -451,5 +435,18 @@ F 2 "" H 4700 2450 50  0001 C CNN
 F 3 "" H 4700 2450 50  0001 C CNN
 	1    4700 2450
 	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5950 1200 6900 1200
+$Comp
+L regul:MIC5219-3.3 U?
+U 1 1 5A86A15C
+P 6500 700
+F 0 "U?" H 6500 1042 50  0000 C CNN
+F 1 "MIC5219-3.3" H 6500 951 50  0000 C CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23-5" H 6500 1025 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/devicedoc/mic5219.pdf" H 6500 700 50  0001 C CNN
+	1    6500 700 
+	1    0    0    -1  
 $EndComp
 $EndSCHEMATC

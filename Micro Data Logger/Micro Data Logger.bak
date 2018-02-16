@@ -441,4 +441,15 @@ F 3 "" H 5500 750 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5500 750  5500 900 
+$Comp
+L device:Crystal Y?
+U 1 1 5A86509B
+P 4700 2450
+F 0 "Y?" V 4654 2581 50  0000 L CNN
+F 1 "Crystal" V 4745 2581 50  0000 L CNN
+F 2 "" H 4700 2450 50  0001 C CNN
+F 3 "" H 4700 2450 50  0001 C CNN
+	1    4700 2450
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC
